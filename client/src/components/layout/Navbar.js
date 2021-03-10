@@ -41,12 +41,12 @@ const Navbars = (props) => {
             <Navbar.Brand className="brand-name">
                 <img
                     alt="logo"
-                    src="./assets/img/fullLogo.png"
+                    src="/assets/img/fullLogo.png"
                     className="d-inline-block align-top fullLogo"
                 />{" "}
                 <img
                     alt="logo"
-                    src="./assets/img/logoName.png"
+                    src="/assets/img/logoName.png"
                     className="d-inline-block align-top logoName"
                 />{" "}
 

@@ -33,11 +33,11 @@ const AptiTopicsTemplate = (props) => {
 
     useEffect(() => {
         if (isDeleted) {
-            setAlert('Topic Deleted', 'success');
             clrPracProbDeleteSuccess();
+            setAlert('Topic Deleted', 'success');
         }
-        
-		//eslint-disable-next-line
+
+        //eslint-disable-next-line
     }, [isDeleted]);
 
     useEffect(() => {
@@ -105,7 +105,7 @@ const AptiTopicsTemplate = (props) => {
                                 <Form>
                                     <Form.Group controlId={title} >
                                         <Form.Control
-                                            className="searchField"
+                                            className="codingQuestSearch"
                                             onChange={handleOnChange}
                                             value={query}
                                             type="text"
@@ -149,7 +149,7 @@ const AptiTopicsTemplate = (props) => {
                     </>
                 </Accordion.Collapse>
             </Accordion>
-        </Container >
+        </Container>
     );
 };
 
