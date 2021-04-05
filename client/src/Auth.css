@@ -297,6 +297,7 @@ input {
 }
 
 /* Navbar and alert css */
+
 .navbar-text a {
    margin: 0.5rem;
 }
@@ -313,7 +314,7 @@ input {
    cursor: pointer;
 }
 
-.user-name{
+.user-name {
    color: #fff;
 }
 
@@ -345,9 +346,11 @@ input {
    -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
 }
+
 .alert--success {
    background-color: #20bf6b;
 }
+
 .alert--danger {
    background-color: #eb4d4b;
 }
@@ -368,11 +371,9 @@ input {
       height: 2.1rem;
       width: 2.1rem;
    }
-
    .brand-name {
       font-size: 1.15rem;
    }
-
    .fullLogo {
       display: none !important;
    }
@@ -383,7 +384,7 @@ input {
    }
 }
 
-@media (max-width: 570px) and (min-width:375px) {
+@media (max-width: 570px) and (min-width: 375px) {
    .logoName {
       height: 30px;
       display: inline-block !important;
@@ -391,16 +392,16 @@ input {
 }
 
 @media (max-width: 410px) {
-   .navbar{
+   .navbar {
       padding-right: 0.7rem;
       padding-left: 0.7rem;
    }
-   .brand-name{
+   .brand-name {
       margin-right: 0.25rem;
    }
 }
 
-@media (max-width:374px) {
+@media (max-width: 374px) {
    .logoName {
       height: 30px;
       display: flex !important;
@@ -408,12 +409,17 @@ input {
    .nav__user-img {
       margin-right: 0.25rem;
    }
-   .user-name{
+   .user-name {
       font-size: 0.85rem;
    }
 }
 
 /* Utility CSS */
+
 .cursor-pointer {
    cursor: pointer;
+}
+
+.resmodal .modal-content {
+   border: none;
 }

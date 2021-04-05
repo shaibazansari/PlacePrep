@@ -167,7 +167,7 @@ function CreateQuiz(props) {
                                 <Form.Label>
                                     <b>Select Category</b>
                                 </Form.Label>
-                                <Form.Group controlId="SelectRowsPerpage">
+                                <Form.Group controlId="category">
                                     <Form.Control
                                         as="select"
                                         className="quiz-inputFiled"
@@ -247,6 +247,7 @@ function CreateQuiz(props) {
                             onDeleteFunc={() => handleOnDelete(ele.id)}
                             onChangeFunc={(e) => handleOnChangeQues(e, index)}
                             quesObj={ele}
+                            deletable={true}
                         />
                     ))}
 

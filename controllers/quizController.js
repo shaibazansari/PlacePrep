@@ -105,10 +105,12 @@ exports.updateQuiz = async (req, res, next) => {
                 }
             });
         }
-        res.status(400).json({
-            status: 'fail',
-            error: err.message
-        });
+        console.log('err', err.name);
+        return next(err);
+        // res.status(400).json({
+        //     status: 'fail',
+        //     error: err.message
+        // });
     }
 
 };
@@ -179,9 +181,15 @@ exports.getAllQuizzes = catchAsync(async (req, res, next) => {
             select: '+name'
         });
     }
-    else if (req.user.role === 'faculty' || req.user.role === 'admin') {
+    else if (req.user.role === 'faculty') {
         filterObj.author = req.user._id;
         quizzes = await Quiz.find(filterObj).populate({
+            path: 'author',
+            select: '+name'
+        });
+    }
+    else if (req.user.role === 'admin') {
+        quizzes = await Quiz.find({}).populate({
             path: 'author',
             select: '+name'
         });
